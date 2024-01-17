@@ -38,6 +38,7 @@ export class SettingsFileDeleter {
 
       const aColorWasModified =
         (cc['activityBar.background'] !== this.colors.sideBarColor_dark.hex() && cc['activityBar.background'] !== this.colors.sideBarColor_light.hex()) ||
+        (cc['activityBar.foreground'] !== this.colors.titleBarTextColor_dark.hex() && cc['activityBar.foreground'] !== this.colors.titleBarTextColor_light.hex()) ||
         (cc['titleBar.activeBackground'] !== this.colors.titleBarColor_dark.hex() && cc['titleBar.activeBackground'] !== this.colors.titleBarColor_light.hex()) ||
         (cc['titleBar.activeForeground'] !== this.colors.titleBarTextColor_dark.hex() && cc['titleBar.activeForeground'] !== this.colors.titleBarTextColor_light.hex());
 
